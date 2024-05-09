@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(57, 143, 140);
+    background-image: url(./images/books.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.term-box{
+    max-width: 460px;
+    background-color: rgb(57, 143, 140);
+    color: black;
+    font-family: sans-serif;
+    padding: 60px 30px;
+}
+
+.term-text{
+    padding: 0 20px;
+    height: 650px;
+    overflow-y: auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.term-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: #282828;
+}
+
+.term-text::-webkit-scrollbar-thumb{
+    background-color: #d13639;
+}
+
+.term-text h2{
+    text-transform: uppercase;
+}
+
+.term-box h4{
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    padding: 0 40px;
+}
+
+.term-box h4 span{
+    color: red;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.agree-button{
+    background-color: white;
+    color: rgb(57, 143, 140);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+    padding-top: 9px ;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.agree-button:hover{
+    background-color: rgb(41, 108, 123);
+    color: white;
+}
+.agree-button:active{
+    opacity: 0.7;
+}
+
+.decline-button{
+    background-color: rgb(205, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 20px;
+    padding-top: 9px ;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+}
+.decline-button:hover{
+    opacity: 0.8;
+}
+.decline-button:active{
+    opacity: 0.4;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    float: left;
+}
